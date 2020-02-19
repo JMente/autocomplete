@@ -21,8 +21,8 @@
   ```
 
 * Props
-    - `value`: Object or text for search
-    - `source`: 
+    - `value`: Object or text for search in the autocomplete
+    - `source`: The endpoint which the autocomplete connects
     - `placeholder`:
 
 * Use the `autocomplete` component:
@@ -43,7 +43,10 @@
         }
     </script>
     <template>
-        <autocomplete v-model="value" source="" placeholder="Enter your text">     
+        <autocomplete 
+            v-model="value" 
+            source="" 
+            placeholder="Enter your text">     
         </autocomplete>
     </template>
 ```
@@ -57,12 +60,95 @@
 
 > The multi select implements a input where you can search and display the list by categories.
 
+### Getting started
+
+* Add the component into your app:
+
+```javascript
+  import multiSelect from 'path/multi-select.vue'
+  ```
+
+* Props
+    - `value`: 
+    - `options`: 
+    - `placeholder`:
+    - `depend`:
+
+* Use the `multi-select` component:
+
+```html
+    <script>
+        import multiSelect from "@/components/multi-select.vue";
+
+        export default{
+            components: {
+                multiSelect,
+            },
+            data(){
+                return {
+                    value: {}
+                }
+            }
+        }
+    </script>
+    <template>
+        <multiSelect 
+            v-model="value" 
+            :options="" 
+            placeholder="Search your option"
+            depend="">     
+        </multiSelect>
+    </template>
+```
+
 ### dependencies
 - vue
 
 ## search select
 
 > The search select implements a input where you can search based on your list of elements.
+
+### Getting started
+
+* Add the component into your app:
+
+```javascript
+  import searchSelect from 'path/search-select.vue'
+  ```
+
+* Props
+    - `value`: 
+    - `options`: 
+    - `placeholder`:
+    - `searchable`:
+
+* Use the `search-select` component:
+
+```html
+    <script>
+        import searchSelect from "@/components/search-select.vue";
+
+        export default{
+            components: {
+                searchSelect,
+            },
+            data(){
+                return {
+                    value: {}
+                }
+            }
+        }
+    </script>
+    <template>
+        <searchSelect 
+            v-model="value" 
+            :options="" 
+            placeholder="Search your option"
+            :searchable="true"
+            >     
+        </searchSelect>
+    </template>
+```
 
 ### dependencies
 - vue
