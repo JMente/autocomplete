@@ -42,6 +42,7 @@
             }
         }
     </script>
+
     <template>
         <autocomplete 
             v-model="value" 
