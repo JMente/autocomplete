@@ -3,9 +3,10 @@
 > This components are created to use in Vue applications. 
 
 # Table of Contents
-    * [autocomplete](#autocomplete)
-    * [multi select](#multi-select)
-    * [search select](#search-select)
+
+* [autocomplete](#autocomplete)
+* [multi select](#multi-select)
+* [search select](#search-select)
 
 ## autocomplete
 
