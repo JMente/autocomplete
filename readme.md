@@ -12,6 +12,23 @@
 
 > The autocomplete implements a input where you can complete the words to search in a list of elements.
 
+### Getting started
+
+* Add the component into your app:
+
+```javascript
+  import autocomplete from 'path/autocomplete.vue'
+
+  export default {
+      components: {
+          autocomplete
+      },
+      data(){
+          
+      }
+
+  ```
+
 ### dependencies
 - vue
 - bootstrap
