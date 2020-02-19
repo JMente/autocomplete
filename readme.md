@@ -10,7 +10,7 @@
 
 ## autocomplete
 
-> The autocomplete implements a input where you can complete the words to search in a list of elements.
+> The autocomplete implements a input where you can complete the words to search in a list of elements. Returning a object with the id and value of the result.
 
 ### Getting started
 
@@ -18,16 +18,35 @@
 
 ```javascript
   import autocomplete from 'path/autocomplete.vue'
-
-  export default {
-      components: {
-          autocomplete
-      },
-      data(){
-          
-      }
-
   ```
+
+* Props
+    - `value`: Object or text for search
+    - `source`: 
+    - `placeholder`:
+
+* Use the `autocomplete` component:
+
+```html
+    <script>
+        import autocomplete from "@/components/autocomplete.vue";
+
+        export default{
+            components: {
+                autocomplete,
+            },
+            data(){
+                return {
+                    value: {}
+                }
+            }
+        }
+    </script>
+    <template>
+        <autocomplete v-model="value" source="" placeholder="Enter your text">     
+        </autocomplete>
+    </template>
+```
 
 ### dependencies
 - vue
