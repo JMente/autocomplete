@@ -7,6 +7,19 @@
 * [autocomplete](#autocomplete)
 * [multi select](#multi-select)
 * [search select](#search-select)
+* [How to install](#How-to-install)
+
+## How to install
+
+```json
+    {
+        "dependencies":{
+            "autocomplete":"ssh://git@github.com:JMente/autocomplete.git#master"
+        }
+    }
+    
+```
+
 
 ## autocomplete
 
@@ -17,7 +30,7 @@
 * Add the component into your app:
 
 ```javascript
-  import autocomplete from 'path/autocomplete.vue'
+  import autocomplete from 'autocomplete/autocomplete.vue'
   ```
 
 * Props
@@ -66,7 +79,7 @@
 * Add the component into your app:
 
 ```javascript
-  import multiSelect from 'path/multi-select.vue'
+  import multiSelect from 'autocomplete/multi-select.vue'
   ```
 
 * Props
@@ -79,7 +92,7 @@
 
 ```html
     <script>
-        import multiSelect from "@/components/multi-select.vue";
+        import multiSelect from "autocomplete/multi-select.vue";
 
         export default{
             components: {
